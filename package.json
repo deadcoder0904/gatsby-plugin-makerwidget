@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-plugin-makerwidget",
+  "description": "Gatsby plugin to add maker widget onto a site",
+  "version": "1.0.0",
+  "author": "Akshay Kadam <akshaykadam0904@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/deadcoder0904/gatsby-plugin-makerwidget/issues"
+  },
+  "homepage": "https://github.com/deadcoder0904/gatsby-plugin-makerwidget",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "maker widget"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  },
+  "repository": "https://github.com/deadcoder0904/gatsby-plugin-makerwidget"
+}
