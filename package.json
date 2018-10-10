@@ -10,7 +10,9 @@
   "keywords": [
     "gatsby",
     "gatsby-plugin",
-    "maker widget"
+    "maker widget",
+    "maker-widget",
+    "gatsby-plugin-maker-widget"
   ],
   "license": "MIT",
   "main": "index.js",

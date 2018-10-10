@@ -28,3 +28,7 @@ exports.onRouteUpdate = function() {
     injectedMakerWidgetScript = true;
   }
 };
+
+exports.onClientEntry = () => {
+  console.log("We've started `onClientEntry`!");
+};
