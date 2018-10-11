@@ -21,14 +21,6 @@ const injectMakerWidgetScript = () => {
 	`);
 };
 
-let injectedMakerWidgetScript = false;
-exports.onRouteUpdate = function() {
-  if (!injectedMakerWidgetScript) {
-    injectMakerWidgetScript();
-    injectedMakerWidgetScript = true;
-  }
-};
-
 exports.onClientEntry = () => {
-  console.log("We've started `onClientEntry`!");
+	injectMakerWidgetScript();
 };
