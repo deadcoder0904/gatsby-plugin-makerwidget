@@ -23,7 +23,8 @@ const injectMakerWidgetScript = options => {
 
 exports.onClientEntry = (args, pluginOptions) => {
   let options;
-  if (!pluginOptions)
+  console.log(pluginOptions);
+  if (!Object.keys(pluginOptions).length)
     options = {
       position: "left",
       widget: "2hc0aqfnigsyxkf5-aewnonydaddchdgj-vwoc6njlwhycxyw6"
