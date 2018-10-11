@@ -1,4 +1,4 @@
-const injectMakerWidgetScript = ({ position, widget }) => {
+const injectMakerWidgetScript = (options) => {
   function addJS(jsCode) {
     const s = document.createElement(`script`);
     s.type = `text/javascript`;
@@ -12,8 +12,8 @@ const injectMakerWidgetScript = ({ position, widget }) => {
 			js = d.createElement(h); js.id = m;
 			js.onload = function(){
 					window.makerWidgetComInit({
-					position: ${position},
-					widget: ${widget}
+					position: ${options.position},
+					widget: ${options.widget}
 			})};
 			js.src = "https://makerwidget.com/js/embed.js";
 			fjs.parentNode.insertBefore(js, fjs)
@@ -23,10 +23,13 @@ const injectMakerWidgetScript = ({ position, widget }) => {
 
 exports.onClientEntry = (
   args,
-  pluginOptions = {
-    position: "left",
-    widget: "2hc0aqfnigsyxkf5-aewnonydaddchdgj-vwoc6njlwhycxyw6"
-  }
+  pluginOptions
 ) => {
-  injectMakerWidgetScript(pluginOptions);
+	let options;
+	if (!pluginOptions) 
+		options =  = {
+    	position: "left",
+    	widget: "2hc0aqfnigsyxkf5-aewnonydaddchdgj-vwoc6njlwhycxyw6"
+  	};
+  injectMakerWidgetScript(options);
 };
