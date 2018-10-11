@@ -22,15 +22,9 @@ const injectMakerWidgetScript = (position, widget) => {
 };
 
 exports.onClientEntry = (args, pluginOptions) => {
-  console.log({ pluginOptions });
-  // const position = pluginOptions.position ? pluginOptions.position : `left`;
-  // const widget = pluginOptions.widget
-  //   ? pluginOptions.widget
-  // 	: `2hc0aqfnigsyxkf5-aewnonydaddchdgj-vwoc6njlwhycxyw6`;
   const {
     position = `left`,
     widget = `2hc0aqfnigsyxkf5-aewnonydaddchdgj-vwoc6njlwhycxyw6`
   } = pluginOptions;
-  console.log({ position, widget });
   injectMakerWidgetScript(position, widget);
 };
