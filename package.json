@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-makerwidget",
   "description": "Gatsby plugin to add maker widget onto a site",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Akshay Kadam <akshaykadam0904@gmail.com>",
   "bugs": {
     "url": "https://github.com/deadcoder0904/gatsby-plugin-makerwidget/issues"
